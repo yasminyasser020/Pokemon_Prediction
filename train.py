@@ -5,7 +5,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 
 # 1. Load and Augment Data
-data = pd.read_csv(r'D:\ITI\Subjects\Data Exploration & Preparation\DV_project\Pokemon.csv')
+data = pd.read_csv('Pokemon.csv')
 data['Power'] = data['Type 2'].fillna(data['Type 1'])
 pre_processed_data = data.drop(columns=['Type 1', 'Type 2'])
 
